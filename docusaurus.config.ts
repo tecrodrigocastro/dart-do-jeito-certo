@@ -1,11 +1,11 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type { Config } from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Dart do jeito certo',
+  tagline: 'Flutterando',
+  favicon: 'img/f.svg',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -25,8 +25,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'pt-br',
+    locales: ['en', 'pt-br'],
   },
 
   presets: [
@@ -58,21 +58,21 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Dart do jeito certo',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Logo Flutterando',
+        src: 'img/f.svg',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Comece por aqui',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/tecrodrigocastro/dart-do-jeito-certo',
           label: 'GitHub',
           position: 'right',
         },
@@ -85,25 +85,25 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Comece por aqui',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Nossas redes sociais',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Site Flutterando',
+              href: 'https://flutterando.com.br/',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.flutterando.com.br/',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'X',
+              href: 'https://x.com/flutterando_',
             },
           ],
         },
@@ -121,7 +121,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Dart do jeito certo, Inc. feito por flutterando.`,
     },
     prism: {
       theme: prismThemes.github,
